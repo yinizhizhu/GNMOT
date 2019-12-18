@@ -1,0 +1,8 @@
+opencv-python
+shutil
+numpy
+Cython
+scipy
+pandas
+tensorboardX
+munkres
