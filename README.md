@@ -57,76 +57,76 @@ The code is developed using python 2.7 on Ubuntu 16.04. NVIDIA GPU is needed. Th
 6. **For MOTChallenge data**, please download from [MOTChallenge Dataset](https://motchallenge.net).
 Download and extract them under {GN_ROOT}/MOT, and make them look like this:
    ```
-${GN_ROOT}
- `-- MOT
-     `-- MOT16
-         |-- train
-         |   |-- MOT16-02
-         |   |   |-- seqinfo.ini
-         |   |   |-- gt
-         |   |   |   |-- gt.txt
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |   |-- img1
-         |   |   |   |-- 000001.jpg
-         |   |   |   |-- 000002.jpg
-         |   |   |   |-- 000003.jpg
-         |   |-- ...
-         |-- test
-         |   |-- MOT16-01
-         |   |   |-- seqinfo.ini
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |   |-- img1
-         |   |   |   |-- 000001.jpg
-         |   |   |   |-- 000002.jpg
-         |   |   |   |-- 000003.jpg
-         |   |-- ...
-     `-- MOT17
-         |-- train
-         |   |-- MOT17-02-DPM
-         |   |   |-- seqinfo.ini
-         |   |   |-- gt
-         |   |   |   |-- gt.txt
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- MOT17-02-FRCNN
-         |   |   |-- seqinfo.ini
-         |   |   |-- gt
-         |   |   |   |-- gt.txt
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- MOT17-02-SDP
-         |   |   |-- seqinfo.ini
-         |   |   |-- gt
-         |   |   |   |-- gt.txt
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- MOT17-02-POI
-         |   |   |-- seqinfo.ini
-         |   |   |-- gt
-         |   |   |   |-- gt.txt
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- ...
-         |-- test
-         |   |-- MOT17-01-DPM
-         |   |   |-- seqinfo.ini
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- MOT17-01-FRCNN
-         |   |   |-- seqinfo.ini
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- MOT17-01-SDP
-         |   |   |-- seqinfo.ini
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- MOT17-01-POI
-         |   |   |-- seqinfo.ini
-         |   |   |-- det
-         |   |   |   |-- det.txt
-         |   |-- ...
+	${GN_ROOT}
+	 `-- MOT
+	     `-- MOT16
+		 |-- train
+		 |   |-- MOT16-02
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- gt
+		 |   |   |   |-- gt.txt
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |   |-- img1
+		 |   |   |   |-- 000001.jpg
+		 |   |   |   |-- 000002.jpg
+		 |   |   |   |-- 000003.jpg
+		 |   |-- ...
+		 |-- test
+		 |   |-- MOT16-01
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |   |-- img1
+		 |   |   |   |-- 000001.jpg
+		 |   |   |   |-- 000002.jpg
+		 |   |   |   |-- 000003.jpg
+		 |   |-- ...
+	     `-- MOT17
+		 |-- train
+		 |   |-- MOT17-02-DPM
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- gt
+		 |   |   |   |-- gt.txt
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- MOT17-02-FRCNN
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- gt
+		 |   |   |   |-- gt.txt
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- MOT17-02-SDP
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- gt
+		 |   |   |   |-- gt.txt
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- MOT17-02-POI
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- gt
+		 |   |   |   |-- gt.txt
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- ...
+		 |-- test
+		 |   |-- MOT17-01-DPM
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- MOT17-01-FRCNN
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- MOT17-01-SDP
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- MOT17-01-POI
+		 |   |   |-- seqinfo.ini
+		 |   |   |-- det
+		 |   |   |   |-- det.txt
+		 |   |-- ...
    ```
 
 ### Training and Testing
