@@ -4,7 +4,7 @@
 This is the official code of '**Graph Networks for Multiple object Tracking**'.
 Multiple object tracking (MOT) task requires reasoning the states of all targets and associating these targets in a global way. However, existing MOT methods mostly focus on the local relationship among objects and ignore the global relationship. Some methods formulate the MOT problem as a graph optimization problem. However, these methods are based on static graphs, which are seldom updated. To solve these problems, we design a new near-online MOT method with an end-to-end graph network. Specifically, we design an appearance graph network and a motion graph network to capture the appearance and the motion similarity separately. The updating mechanism is carefully designed in our graph network, which means that nodes, edges and the global variable in the graph can be updated. The global variable can capture the global relationship to help tracking. Finally, a strategy to handle missing detections is proposed to remedy the defect of the detectors. Our method is evaluated on both the MOT16 and the MOT17 benchmarks, and experimental results show the encouraging performance of our method.
 
-![Illustrating the architecture of the proposed Higher-HRNet](/Pic/pipeline.png)
+![Illustrating the architecture of the proposed Higher-HRNet](/Pic/Pipeline.png)
 
 ## Main Results
 ### Results on MOT16 with private detection
