@@ -1,16 +1,18 @@
-# Graph Networks for Multiple Object Tracking
+# Graph Networks for Multiple Object Tracking (WACV 2020)
 
 ## Introduction
 This is the official code of '**Graph Networks for Multiple object Tracking**'.
 Multiple object tracking (MOT) task requires reasoning the states of all targets and associating these targets in a global way. However, existing MOT methods mostly focus on the local relationship among objects and ignore the global relationship. Some methods formulate the MOT problem as a graph optimization problem. However, these methods are based on static graphs, which are seldom updated. To solve these problems, we design a new near-online MOT method with an end-to-end graph network. Specifically, we design an appearance graph network and a motion graph network to capture the appearance and the motion similarity separately. The updating mechanism is carefully designed in our graph network, which means that nodes, edges and the global variable in the graph can be updated. The global variable can capture the global relationship to help tracking. Finally, a strategy to handle missing detections is proposed to remedy the defect of the detectors. Our method is evaluated on both the MOT16 and the MOT17 benchmarks, and experimental results show the encouraging performance of our method.
 
-![Illustrating the architecture of the proposed Higher-HRNet](/Pic/Pipeline.png)
+![Illustrating the pipeline of the proposed GNMOT](/Pic/pipeline.png)
 
 ## Main Results
 ### Results on MOT16 with private detection
 | Method             | Detection | MOTA | IDF1 | MT |   ML | FP | FN | IDs | FM |
 |--------------------|----------|------------|---------|--------|-------|-------|--------|--------|--------| 
 | GN without SOT        | POI  | 58.4      |  54.8  | 27.3%   | 23.2%  | 5731  |  68630  |  1454  |  1730  |
+
+![Illustrating the visualization of tracking results](/Pic/mot.gif)
 
 ## Environment
 The code is developed using python 2.7 on Ubuntu 16.04. NVIDIA GPU is needed. The code is developed and tested using GTX 1070 GPU card. Other platforms or GPU cards are not fully tested.
@@ -37,7 +39,7 @@ The code is developed using python 2.7 on Ubuntu 16.04. NVIDIA GPU is needed. Th
    ├── ReadMe.md
    └── requirements.txt
    ```
-5. Download pretrained models from our model zoo([BaiduPan](https://baidu.com)
+5. Download pretrained models from our model zoo([BaiduPan](https://baidu.com))
    ```
    ${GN_ROOT}
     `-- App2

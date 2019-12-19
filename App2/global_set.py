@@ -1,4 +1,5 @@
-mot_dataset_dir = '/media/codinglee/DATA/Ubuntu16.04/Desktop/MOT/'
+#mot_dataset_dir = '/media/codinglee/DATA/Ubuntu16.04/Desktop/MOT/'
+mot_dataset_dir = '../MOT/'
 
 model_dir = 'model/'
 

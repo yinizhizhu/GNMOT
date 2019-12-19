@@ -131,18 +131,18 @@ class GN():
     def loadAModel(self):
         from mot_model import uphi, ephi, vphi
         tail = 13
-        self.AUphi = torch.load('../App2_bb/' + model_dir + 'uphi_%02d.pth' % tail).to(self.device)
-        self.AVphi = torch.load('../App2_bb/' + model_dir + 'vphi_%02d.pth' % tail).to(self.device)
-        self.AEphi1 = torch.load('../App2_bb/' + model_dir + 'ephi1_%02d.pth' % tail).to(self.device)
-        self.AEphi2 = torch.load('../App2_bb/' + model_dir + 'ephi2_%02d.pth' % tail).to(self.device)
-        self.Au = torch.load('../App2_bb/' + model_dir + 'u_%02d.pth' % tail).to(self.device)
+        self.AUphi = torch.load('../App2/' + model_dir + 'uphi_%02d.pth' % tail).to(self.device)
+        self.AVphi = torch.load('../App2/' + model_dir + 'vphi_%02d.pth' % tail).to(self.device)
+        self.AEphi1 = torch.load('../App2/' + model_dir + 'ephi1_%02d.pth' % tail).to(self.device)
+        self.AEphi2 = torch.load('../App2/' + model_dir + 'ephi2_%02d.pth' % tail).to(self.device)
+        self.Au = torch.load('../App2/' + model_dir + 'u_%02d.pth' % tail).to(self.device)
 
     def loadMModel(self):
         from m_mot_model import uphi, ephi
         tail = 13
-        self.MUphi = torch.load('../Motion1_bb/' + model_dir + 'uphi_%d.pth' % tail).to(self.device)
-        self.MEphi = torch.load('../Motion1_bb/' + model_dir + 'ephi_%d.pth' % tail).to(self.device)
-        self.Mu = torch.load('../Motion1_bb/' + model_dir + 'u_%d.pth' % tail).to(self.device)
+        self.MUphi = torch.load('../Motion1/' + model_dir + 'uphi_%d.pth' % tail).to(self.device)
+        self.MEphi = torch.load('../Motion1/' + model_dir + 'ephi_%d.pth' % tail).to(self.device)
+        self.Mu = torch.load('../Motion1/' + model_dir + 'u_%d.pth' % tail).to(self.device)
 
     def swapFC(self):
         self.cur = self.cur ^ self.nxt
