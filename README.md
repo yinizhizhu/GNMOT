@@ -6,13 +6,19 @@ Multiple object tracking (MOT) task requires reasoning the states of all targets
 
 ![Illustrating the pipeline of the proposed GNMOT](/Pic/pipeline.png)
 
+
 ## Main Results
 ### Results on MOT16 with private detection
+
+<center>
 | Method             | Detection | MOTA | IDF1 | MT |   ML | FP | FN | IDs | FM |
 |--------------------|----------|------------|---------|--------|-------|-------|--------|--------|--------| 
 | GN without SOT        | POI  | 58.4      |  54.8  | 27.3%   | 23.2%  | 5731  |  68630  |  1454  |  1730  |
+</center>
 
-![Illustrating the visualization of tracking results](/Pic/mot.gif)
+<p align='center'>
+    <img src="/Pic/mot.gif">
+</p>
 
 ## Environment
 The code is developed using python 2.7 on Ubuntu 16.04. NVIDIA GPU is needed. The code is developed and tested using GTX 1070 GPU card. Other platforms or GPU cards are not fully tested.
