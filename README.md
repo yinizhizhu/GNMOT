@@ -36,7 +36,7 @@ The code is developed using python 2.7 on Ubuntu 16.04. NVIDIA GPU is needed. Th
    ```
    ${GN_ROOT}
    ├── MOT
-   ├── App2e
+   ├── App2
    |   ├── model
    ├── Motion1
    |   ├── model
@@ -45,7 +45,7 @@ The code is developed using python 2.7 on Ubuntu 16.04. NVIDIA GPU is needed. Th
    ├── ReadMe.md
    └── requirements.txt
    ```
-5. Download pretrained models from our model zoo([BaiduPan](https://baidu.com))
+5. Download pretrained models from our model zoo([BaiduPan](https://pan.baidu.com/s/1QlYAd-wi5IdnJCoBc4tr3g)(extract code: um4c)
    ```
    ${GN_ROOT}
     `-- App2
