@@ -45,7 +45,7 @@ The code is developed using python 2.7 on Ubuntu 16.04. NVIDIA GPU is needed. Th
    ├── ReadMe.md
    └── requirements.txt
    ```
-5. Download pretrained models from our model zoo([BaiduPan](https://pan.baidu.com/s/1QlYAd-wi5IdnJCoBc4tr3g)(extract code: um4c)
+5. Download pretrained models from our model zoo([BaiduPan](https://pan.baidu.com/s/1QlYAd-wi5IdnJCoBc4tr3g)(extract code: um4c))
    ```
    ${GN_ROOT}
     `-- App2
@@ -139,7 +139,7 @@ Download and extract them under {GN_ROOT}/MOT, and make them look like this:
 
 ### Training and Testing
 
-#### Testing on MOTChallenge dataset using model zoo's models ([BaiduPan](https://baidu.com))
+#### Testing on MOTChallenge dataset using model zoo's models ([BaiduPan](https://pan.baidu.com/s/1QlYAd-wi5IdnJCoBc4tr3g)(extract code: um4c))
 
 ```
 cd ${GN_ROOT}/GN
